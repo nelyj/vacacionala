@@ -1,0 +1,20 @@
+.col-md-3
+  %ul#id.nav.nav-stacked.affix
+    %li=link_to "Example 1", "#"
+    %li=link_to "Example 1", "#"
+    %li=link_to "Example 1", "#"
+.col-md-9
+  .row
+    .col-md-3.col-sm-2
+      =image_tag "http://lorempixel.com/g/150/150/"
+    .col-md-9.col-sm-10
+      %article.row
+        .col-md-12
+          %span.label.label-default.pull-right
+            Hostal
+        .col-md-12
+          %h6.pull-left 4 Personas
+          %h5.pull-right
+            =place.address
+
+      =debug place

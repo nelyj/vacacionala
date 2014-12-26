@@ -18,6 +18,7 @@ gem 'therubyracer',  platforms: :ruby
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
+gem 'jquery-ui-rails'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 gem 'turbolinks'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
@@ -32,6 +33,8 @@ gem 'devise_invitable', '~> 1.3.4'
 gem 'haml'
 gem 'haml-rails'
 gem 'simple_form'
-gem 'bootstrap-sass', '~> 3.3.1'
+
+gem 'less-rails-bootstrap'
+gem 'designmodo-flatuipro-rails', '~> 1.3.2.0.branch'
 gem 'autoprefixer-rails'
 gem 'state_machine'
