@@ -3,6 +3,8 @@ class Place < ActiveRecord::Base
 
 	scope :published, -> {  where(state: "published") }
 
+  geocoded_by :address
+  after_validation :geocode, :if => :address_changed?
 
 	state_machine :state, :initial => :draft do
 		event :published do
