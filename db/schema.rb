@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141225200255) do
+ActiveRecord::Schema.define(version: 20141226023625) do
 
   create_table "places", force: true do |t|
     t.string   "name"
@@ -51,6 +51,7 @@ ActiveRecord::Schema.define(version: 20141225200255) do
     t.integer  "invited_by_id"
     t.string   "invited_by_type"
     t.integer  "invitations_count",      default: 0
+    t.string   "enterprise_name"
   end
 
   add_index "users", ["email"], name: "index_users_on_email", unique: true
